@@ -50,6 +50,7 @@
 		"redux-state-sync": "^3.0.0",
 		"redux-thunk": "^2.3.0",
 		"styled-components": "^5.0.1",
-		"susy": "^3.0.5"
+		"susy": "^3.0.5",
+		"underscore": "^1.9.2"
 	}
 }

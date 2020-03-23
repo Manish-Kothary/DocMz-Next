@@ -6,14 +6,16 @@ import dashboard from "./dashboardReducer";
 import loggedInDoctor from "./loggedInDoctorReducer";
 import loggedInPatient from "./loggedInPatientReducer";
 import appointment from "./appointmentReducer";
+import questionnaire from "./questionnaireReducer";
 
 export default {
-  user,
-  referrer,
-  specialities,
-  doctors,
-  dashboard,
-  loggedInDoctor,
-  loggedInPatient,
-  appointment,
+	user,
+	referrer,
+	specialities,
+	doctors,
+	dashboard,
+	loggedInDoctor,
+	loggedInPatient,
+	appointment,
+	questionnaire
 };
