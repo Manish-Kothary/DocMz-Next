@@ -17,6 +17,7 @@
 		"bootstrap": "^4.4.1",
 		"breakpoint-sass": "^2.7.1",
 		"classnames": "^2.2.6",
+		"countrycitystatejson": "^0.2.16",
 		"flickity": "^2.2.1",
 		"html-react-parser": "^0.10.1",
 		"isomorphic-unfetch": "^3.0.0",

@@ -28,5 +28,5 @@ export const SET_APPOINTMENT_TIME = "SET_APPOINTMENT_TIME";
 
 //questionnaire
 export const ADD_QUESTION = "ADD_QUESTION";
-
 export const GET_QUESTIONS = "GET_QUESTIONS";
+export const UPDATE_QUESTION = "UPDATE_QUESTION";

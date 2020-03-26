@@ -17,4 +17,11 @@ export const getAppointments = ({ limit, doctor, date }) =>
 export const approveAppointments = body =>
 	Axios.post(apiList.approveAppointments, body);
 
+//Routes for Questionnaire in backend
+
+//To get all Question
 export const getQuestions = () => Axios.post(apiList.getQuestions);
+
+//Update an existing question
+export const updateQues = (id, title, option) =>
+	Axios.post(apiList.updateQuestion, { id, title, option });

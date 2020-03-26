@@ -11,10 +11,11 @@ export default function TreeSection(props) {
 		for (var i = 0; i < option.length; i++) {
 			console.log("options" + i, option[i]);
 			if (option[i].linkedQuestion) {
+				console.log("all option are", option);
 				tree.children.push({
 					title: option[i].linkedQuestion.title,
 					key: option[i].linkedQuestion._id,
-					option: option[i].option,
+					option: option[i].linkedQuestion.option,
 					children: []
 				});
 				let d = giveMytree(

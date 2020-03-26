@@ -8,6 +8,7 @@ import Header from "../../header/Header";
 import "../../../style/app.scss";
 import { getSpecialities } from "../../../redux/actions";
 import Footer from "../../footer/Footer";
+import _ from "underscore";
 
 const withBasicLayout = PassedComponent => {
 	return class extends React.Component {
@@ -53,6 +54,11 @@ const withBasicLayout = PassedComponent => {
 			}
 		}
 		componentDidUpdate(prevProps) {
+			// console.log(
+			// 	"updated",
+			// 	this.props.loggedInPatient,
+			// 	this.props.loggedInDoctor
+			// );
 			if (prevProps.loggedInDoctor !== this.props.loggedInDoctor) {
 				if (this.props.loggedInDoctor._id) {
 					Router.push("/doctor/dashboard");
@@ -96,7 +102,8 @@ const withBasicLayout = PassedComponent => {
 
 const mapStateToProps = state => ({
 	specialities: state.specialities,
-	loggedInDoctor: state.loggedInDoctor
+	loggedInDoctor: state.loggedInDoctor,
+	loggedInPatient: state.loggedInPatient
 });
 const mapActionToProps = {
 	getSpecialities

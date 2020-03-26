@@ -7,8 +7,8 @@ export default class CreateQuestion extends Component {
 				<div key={index}>
 					{elem.optionType === "radio" ? (
 						<div>
-							<input type="radio" value={elem.text} />
-							<input
+							<Input type="radio" value={elem.text} />
+							<Input
 								type="text"
 								name="title"
 								value={elem.text}
@@ -16,7 +16,7 @@ export default class CreateQuestion extends Component {
 							/>
 						</div>
 					) : (
-						<input
+						<Input
 							type="text"
 							name="title"
 							value={elem.text}
@@ -47,7 +47,7 @@ export default class CreateQuestion extends Component {
 					</Button>
 				</Card>
 				<Button type="primary" onClick={this.props.submitHandler}>
-					Submit
+					{this.props.text}
 				</Button>
 			</div>
 		);

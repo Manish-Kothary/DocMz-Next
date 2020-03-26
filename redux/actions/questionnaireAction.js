@@ -1,5 +1,5 @@
-import { ADD_QUESTION, GET_QUESTIONS } from "./type";
-import { getQuestions } from "../../services/api/doctors";
+import { ADD_QUESTION, GET_QUESTIONS, UPDATE_QUESTION } from "./type";
+import { getQuestions, updateQues } from "../../services/api/doctors";
 
 export const addQuestion = question => ({
 	type: ADD_QUESTION,
@@ -15,4 +15,13 @@ export const getQuestionsTree = () => dispatch => {
 			payload: res.data.data
 		});
 	});
+};
+
+export const updateQuestion = (id, title, option) => {
+	console.log("in update question actionCreator");
+	return updateQues(id, title, option)
+		.then(() => getQuestionsTree())
+		.catch(err => {
+			console.log("error while updating qus", err);
+		});
 };

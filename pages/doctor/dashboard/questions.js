@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import {
 	addQuestion,
-	getQuestionsTree
+	getQuestionsTree,
+	updateQuestion
 } from "../../../redux/actions/questionnaireAction";
 
 import CreateQuestion from "../.././../components/createQuestion/CreateQuestion";
@@ -83,17 +84,20 @@ class Questionnaire extends Component {
 	};
 
 	onSelectHandler = (selectedKeys, info) => {
-		console.log("It came in here", selectedKeys, info.selectedNodes[0].props);
-		// this.changeState(selectedKeys);
-		// if (info)
-		// 	this.setState({
-		// 		title: info.selectedNodes[0].props.title,
-		// 		id: selectedKeys[0],
-		// 		option: info.selectedNodes[0].props.option
-		// 	});
-		// else {
-		// 	console.log("sonething wrong", info);
-		// }
+		console.log("It came in here", selectedKeys, info.selectedNodes);
+		this.changeState(selectedKeys);
+		if (info)
+			this.setState(
+				{
+					title: info.selectedNodes[0].props.title,
+					id: selectedKeys[0],
+					option: info.selectedNodes[0].props.option
+				},
+				() => console.log(this.state)
+			);
+		else {
+			console.log("sonething wrong", info);
+		}
 		// console.log("selected", selectedKeys, info.selectedNodes);
 	};
 
@@ -156,7 +160,9 @@ const mapStateToProps = state => {
 const mapActionToProps = dispatch => {
 	return {
 		addQuestion: () => dispatch(addQuestion()),
-		getQuestions: () => dispatch(getQuestionsTree())
+		getQuestions: () => dispatch(getQuestionsTree()),
+		updateQuestion: (id, title, option) =>
+			dispatch(updateQuestion(id, title, option))
 	};
 };
 export default connect(mapStateToProps, mapActionToProps)(Questionnaire);

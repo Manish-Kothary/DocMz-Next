@@ -21,6 +21,7 @@ const getAppointments = `${BASE_URL}/appointment/get`;
 const approveAppointments = `${BASE_URL}/appointment/approve`;
 
 const getQuestions = `${BASE_URL}/questionnaire/getQuestion`;
+const updateQuestion = `${BASE_URL}/questionnaire/updateQuestion`;
 
 export default {
 	getSpecialities,
@@ -42,5 +43,6 @@ export default {
 	getAppointments,
 	approveAppointments,
 
-	getQuestions
+	getQuestions,
+	updateQuestion
 };
