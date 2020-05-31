@@ -1,12 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./components/App";
-import "./Sass/main.scss";
+import React, {Com} from 'react';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+class dashboard extends Component{
+  render(){
+    return(
+      <div>
+        hii
+      </div>
+    )
+  }
+}
+
+export default dashboard;
