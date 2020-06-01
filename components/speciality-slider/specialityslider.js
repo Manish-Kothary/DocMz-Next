@@ -66,7 +66,7 @@ class phase4 extends Component{
         return(
             <div className="phase4">
                 <Row className="heading41">
-                    <p>FEATURED IN</p>
+                    <p>SPECIALITY IN</p>
                 </Row>
                 <Row>
                 <div className="gallery4">

@@ -3,6 +3,7 @@ import BannerType1 from '../components/banners/banner-type-1/BannerType1'
 import { BANNER_BTN_TEXT, BANNER_TEXT_1, BANNER_TEXT_2, BANNER_TEXT_3, BANNER_IMAGE, SEARCH_BOX_HEADING, SPECIALITIES_CARDS, SPECIALITIES_TEXT_1, SPECIALITIES_TEXT_2, SPECIALITIES_BTN_TEXT, HOW_IT_WORK_PRETITLE, HOW_IT_WORK_TITLE_P_1, HOW_IT_WORK_TITLE_P_2, HOW_IT_WORK_CONTENT, HOW_IT_WORK_STEPS } from '../constants/messages/home'
 import SearchBox from '../components/search/search-box/SearchBox'
 import Specialityslider from '../components/speciality-slider/specialityslider'
+import Homebanner from '../components/homebanner/homebanner'
 import FlicktySlider from '../components/sliders/flickty-slider/FlicktySlider'
 import SimpleSlideCard from '../components/sliders/slides/simple-slide-card/SimpleSlideCard'
 import { ReactSVG } from 'react-svg'
@@ -11,7 +12,8 @@ import Link from 'next/link'
 
 const Home = () => (
   <div className="c-home">
-    <BannerType1 
+    <Homebanner></Homebanner>
+    {/* <BannerType1 
       image={BANNER_IMAGE} 
       title={
         <>
@@ -27,7 +29,7 @@ const Home = () => (
           </Link>
         </div>
       }
-    />
+    /> */}
     <div className="container mt-n5 mb-2">
       <div className="row justify-content-center">
         <div className="col-12 col-xxl-10">
@@ -35,14 +37,14 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <HowItworks 
+    {/* <HowItworks 
     preTitle={HOW_IT_WORK_PRETITLE}
     title={HOW_IT_WORK_TITLE_P_1}
     titleNext={HOW_IT_WORK_TITLE_P_2}
     steps={HOW_IT_WORK_STEPS}
     >
       <p>{HOW_IT_WORK_CONTENT}</p>
-    </HowItworks>
+    </HowItworks> */}
     <div className="container-fluid pt-5">
       <Specialityslider></Specialityslider>
       {/* <div className="row">
