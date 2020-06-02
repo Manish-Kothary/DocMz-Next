@@ -4,6 +4,7 @@ import {Row,Col, Input} from 'antd';
 import Problemcard from '../../components/problemcard/problemcard';
 import Contactus_form from '../../components/contactus_form/contactus_form';
 import Header from '../../components/contactus-header/contactusheader';
+import Footer from '../../components/footer/Footer';
 
 import './index.css';
 
@@ -39,18 +40,19 @@ class contactus extends Component{
                 <Row>
                     <Col md={11} offset={1}>
                         <div className="cont_form_content">
-                            <p className="form_header">Contact Customer Support <br/> Tell us how we can help.</p>
+                            <p className="form_heading">Contact Customer Support <br/> Tell us how we can help.</p>
                             <Contactus_form></Contactus_form>
                         </div>
                     </Col>
                     <Col md={11} >
                         <div className="problem_section">
-                        <p className="problem_header">Need some help? <br/> Find what you need here</p>
+                        <p className="problem_heading">Need some help? <br/> Find what you need here</p>
                         {this.problems()}
                         </div>
                     </Col>
                 </Row>
                 </div>
+                <Footer></Footer>
             </div>
         )
     }

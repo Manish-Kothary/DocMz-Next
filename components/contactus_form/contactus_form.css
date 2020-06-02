@@ -5,10 +5,20 @@
 }
 
 .submit_button{
-    position: relative;
-    left: 45%;
-    padding: 5px 20px ;
-    display: block;
-    color: white;
-    background-color: rgb(167, 58, 189);
+    @media screen and (min-width: 721px) {
+        position: relative;
+        left: 45%;
+        padding: 5px 20px ;
+        display: block;
+        color: white;
+        background-color: rgb(167, 58, 189);
+    }
+    @media screen and (max-width: 720px) {
+        position: relative;
+        left: 40%;
+        padding: 5px 20px ;
+        display: block;
+        color: white;
+        background-color: rgb(167, 58, 189);
+    }
 }

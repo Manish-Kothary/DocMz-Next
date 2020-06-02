@@ -4,16 +4,40 @@
     width: 100%;
 }
 
+.logo_image{
+    @media screen and (min-width: 721px) {
+        width: 100%;
+        padding-top: 10%;
+    }
+    @media screen and (max-width: 720px) {
+        padding-top: 10%;
+    }
+}
+
 .icon_heading{
-    text-align: center;
-    font-size: larger;
-    font-weight: 200;
-    letter-spacing: 0.05em;
+    @media screen and (min-width: 721px) {
+        text-align: center;
+        font-size: larger;
+        font-weight: 200;
+        letter-spacing: 0.05em;
+    }
+    @media screen and (max-width: 720px) {
+        font-size: larger;
+        font-weight: 200;
+        letter-spacing: 0.05em;
+    }
+    
 }
 
 .cont_head_item{
-    display: block;
-    color: rgb(58, 38, 92) ;
-    font-size: 20px;
-    padding-top: 3vh;
+    @media screen and (min-width: 721px) {
+        display: block;
+        color: rgb(58, 38, 92) ;
+        font-size: 20px;
+        padding-top: 3vh;
+    }
+    @media screen and (max-width: 720px) {
+        display:none;
+    }
+    
 }
