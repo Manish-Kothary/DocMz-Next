@@ -1,7 +1,6 @@
 .phase2{
     @media screen and (min-width: 721px) {
         margin: 20vh 0vh 5vh 0vh;
-        height: 60vh;
         width: 100%;
     }
 }

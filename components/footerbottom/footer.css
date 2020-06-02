@@ -1,20 +1,17 @@
 .footer{
     @media screen and (min-width: 721px) {
         margin-top: 10vh;
-        height: 60vh;
         width: 100%;
         background-color: rgb(19, 4, 19);
     }
     
     @media screen and (max-width: 720px) {
-        height: 55vh;
         width: 100%;
         background-color: rgb(19, 4, 19);
     }
 }
 
 .footersection1{
-    height: 40vh;
     margin: 0;
 }
 
@@ -48,10 +45,10 @@
     @media screen and (min-width: 721px) {
         position: absolute;
         display: block;
-        margin-top: 40px;
         height: 15vh;
         width: 100%;
         color: rgb(231, 186, 231);
+        background-color: rgb(19, 4, 19);
     }
     
     @media screen and (max-width: 720px) {
