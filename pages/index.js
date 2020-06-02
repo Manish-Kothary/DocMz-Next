@@ -4,6 +4,7 @@ import { BANNER_BTN_TEXT, BANNER_TEXT_1, BANNER_TEXT_2, BANNER_TEXT_3, BANNER_IM
 import SearchBox from '../components/search/search-box/SearchBox'
 import Specialityslider from '../components/speciality-slider/specialityslider'
 import Homebanner from '../components/homebanner/homebanner'
+import Homegrid from '../components/homegrid/homegrid'
 import FlicktySlider from '../components/sliders/flickty-slider/FlicktySlider'
 import SimpleSlideCard from '../components/sliders/slides/simple-slide-card/SimpleSlideCard'
 import { ReactSVG } from 'react-svg'
@@ -30,13 +31,14 @@ const Home = () => (
         </div>
       }
     /> */}
-    <div className="container mt-n5 mb-2">
+    {/* <div className="container mt-n5 mb-2">
       <div className="row justify-content-center">
         <div className="col-12 col-xxl-10">
           <SearchBox title={SEARCH_BOX_HEADING} />
         </div>
       </div>
-    </div>
+    </div> */}
+    <Homegrid></Homegrid>
     {/* <HowItworks 
     preTitle={HOW_IT_WORK_PRETITLE}
     title={HOW_IT_WORK_TITLE_P_1}

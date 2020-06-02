@@ -75,7 +75,8 @@ class phase4 extends Component{
                     </Col>
                     <Col md={18} offset={1}>
                     <AliceCarousel
-                    dotsDisabled={true}
+                    dotsDisabled={false}
+                    touchTrackingEnabled={true}
                     buttonsDisabled={true}
                     items={galleryItems}
                     responsive={responsive}

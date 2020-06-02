@@ -1,21 +1,41 @@
 .phase1{
     height: 100vh;
-    background-image: image('blackgradient.png');
+    @media screen and (min-width: 721px) {
+        margin: 10vh 0vh 0vh 20vh;
+    }
 }
 
 .text{
-    position: absolute;
-    height: 88vh;
-    width: 100%;
+    @media (min-width: 721px) {
+        height: 88vh;
+        width: 100%;
+    }
+    @media (max-width: 720px) {
+        text-allign: center;
+        display: block;
+        height: 30vh;
+        width: 100%;
+    }
 }
 
 .heading11{
-    position: relative;
-    top:22%;
-    height: 32vh;
-    color: rgb(45, 17, 68);
-    font-size: 4rem;
-    font-weight: 750;
+    @media screen and (min-width: 721px) {
+        display: block;
+        font-size: 2rem;
+        position: relative;
+        height: 32vh;
+        color: rgb(45, 17, 68);
+        font-size: 4rem;
+        font-weight: 750;
+    }
+    @media screen and (max-width: 720px) {
+        position: relative;
+        top:10%;
+        display: block;
+        font-size: 3rem;
+        color: rgb(45, 17, 68);
+        font-weight: 750;
+    }
 }
 
 .searchbar{
@@ -70,4 +90,22 @@
     font-size: 1.1rem;
     font-weight: 600;
     padding: 20px 25px 3px 5px;
+}
+
+.home_image_container{
+    @media screen and (min-width: 721px) {
+    }
+    @media screen and (max-width: 720px) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.home_image{
+    @media screen and (min-width: 721px) {
+    }
+    @media screen and (max-width: 720px) {
+        display: block;
+    }
+    
 }

@@ -53,16 +53,16 @@ class phase2 extends Component{
                     <p className="heading21">Find doctors and dentists by ...</p>
                     </Col>
                 </Row>
-                <Row>
-                    <Col md={7} offset={2}>
+                <Row >
+                    <Col className="categorylists" md={8} >
                         <p className="listheading2">City</p>
-                        <ul>{this.cityItems()}</ul>
+                        <ul >{this.cityItems()}</ul>
                     </Col>
-                    <Col md={6}>
+                    <Col className="categorylists" md={8}>
                         <p className="listheading2">Specialty</p>
                         <ul>{this.specialtyItems()}</ul>
                     </Col>
-                    <Col md={6}>
+                    <Col className="categorylists" md={8}>
                     <p className="listheading2">Insurance</p>
                         <ul>{this.insuranceItems()}</ul>
                     </Col>

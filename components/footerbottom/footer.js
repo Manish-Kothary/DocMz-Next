@@ -18,7 +18,7 @@ class footer extends Component{
                         </div>
                     </Col>
                     <Col md={5}>
-                        <div className="lists">
+                        <div className="lists sitelinks">
                             <p className="headingf1">Site Links</p>
                             <p className="headingf2">home</p>
                             <p className="headingf2">how it works</p>
@@ -38,9 +38,8 @@ class footer extends Component{
 
                     </Col>
                 </Row>
-                <Row>
+                <Row className="ending">
                     <Col md={20} offset={2}>
-                        <div className="ending">
                             <Row>
                                 <Col md={9}>
                                 <p>Copyright ©2020 – Metaflow LTD. – All rights reserved.</p>
@@ -60,7 +59,6 @@ class footer extends Component{
                                     </Col>
                                 </Col>
                             </Row>
-                            <hr style={{height:"1px", width:"100%", position:"absolute", color:"black"}}/>
                             <Row className="paymentadd">
                                 <Col md={3} offset={16}><p>secure checkout</p></Col>
                                 <Col md={1}><img src="/images/footerbottom/paypal.svg"/></Col>
@@ -69,7 +67,6 @@ class footer extends Component{
                                 <Col md={1}><img src="/images/footerbottom/americanexpress.svg"/></Col>
                                 <Col md={1}><img style={{height:"25px"}} src="/images/footerbottom/discover.jpg"/></Col>
                             </Row>
-                        </div>
                     </Col>
                 </Row>
             </div>

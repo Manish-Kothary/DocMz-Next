@@ -1,8 +1,16 @@
 .footer{
-    margin-top: 10vh;
-    height: 60vh;
-    width: 100%;
-    background-color: rgb(19, 4, 19);
+    @media screen and (min-width: 721px) {
+        margin-top: 10vh;
+        height: 60vh;
+        width: 100%;
+        background-color: rgb(19, 4, 19);
+    }
+    
+    @media screen and (max-width: 720px) {
+        height: 55vh;
+        width: 100%;
+        background-color: rgb(19, 4, 19);
+    }
 }
 
 .footersection1{
@@ -10,9 +18,20 @@
     margin: 0;
 }
 
+.sitelinks{
+    @media screen and (max-width: 720px) {
+        display:none;
+    }
+}
+
 .lists{
-    height: 30vh;
-    margin: 5vh 2vh;
+    @media screen and (min-width: 721px) {
+        height: 30vh;
+        margin: 5vh 2vh;
+    }
+    @media screen and (max-width: 720px) {
+        margin: 3vh 1vh;
+    }
 }
 
 .headingf1{
@@ -26,12 +45,18 @@
 }
 
 .ending{
-    position: absolute;
-    display: block;
-    margin-top: 40px;
-    height: 15vh;
-    width: 100%;
-    color: rgb(231, 186, 231);
+    @media screen and (min-width: 721px) {
+        position: absolute;
+        display: block;
+        margin-top: 40px;
+        height: 15vh;
+        width: 100%;
+        color: rgb(231, 186, 231);
+    }
+    
+    @media screen and (max-width: 720px) {
+        display:none;
+    }
 }
 
 .paymentadd{
