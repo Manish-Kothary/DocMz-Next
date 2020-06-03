@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {useState, useEffect, Component } from 'react';
 import{Row,Col, Icon, DatePicker} from 'antd';
 import { Input } from 'antd';
 
@@ -8,6 +8,7 @@ import './homebanner.css';
 const { Search } = Input;
 
 class phase1 extends Component{
+
     render(){
         return(
                 <Row className ="phase1">
@@ -22,6 +23,9 @@ class phase1 extends Component{
                                     onSearch={value => console.log(value)}
                                     />
                                 </Col>
+                            </Row>
+                            <Row>
+                                <button className="book_now_button">Book Now</button>
                             </Row>
                             {/* <button className="buy_now_button hvr-pulse-grow">BOOK NOW</button>
                             <button className="see_action_button hvr-pulse-grow">SEE IT IN ACTION <Icon type="caret-right" /></button>

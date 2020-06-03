@@ -1,7 +1,21 @@
+.form{
+    text-align: end;
+}
+
 .forminput{
-    width: 80%;
+    width: 50%;
     border: 1px solid grey;
-    margin: 2vh 0;
+    margin: 2vh 10vh 2vh 1vh;
+}
+
+.required{
+    font-size: larger;
+    font-weight: 400;
+}
+
+.required :after{
+    content:" *";
+    color: red;
 }
 
 .submit_button{
@@ -11,7 +25,9 @@
         padding: 5px 20px ;
         display: block;
         color: white;
-        background-color: rgb(167, 58, 189);
+        border-radius: 5px;
+        border: 1px solid rgb(135, 9, 223);
+        background-color: rgb(135, 9, 223);
     }
     @media screen and (max-width: 720px) {
         position: relative;
@@ -19,6 +35,12 @@
         padding: 5px 20px ;
         display: block;
         color: white;
-        background-color: rgb(167, 58, 189);
+        border-radius: 5px;
+        border: 1px solid rgb(135, 9, 223);
+        background-color: rgb(135, 9, 223);
     }
+}
+
+.submit_button :hover{
+    background-color: rgb(63, 1, 107);
 }
