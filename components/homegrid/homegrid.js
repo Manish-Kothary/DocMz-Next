@@ -26,7 +26,7 @@ class phase5 extends Component{
                         <img className="grid" src="/images/homegrid/phase51.jpg"/>
                         </Col>
                     </Row>
-                    <div className="reverse_row">
+                    <Row className="reverse_row">
                         <Col md={10}>
                         <img  className="grid" src="/images/homegrid/phase52.jpg"/>
                         </Col>
@@ -36,7 +36,7 @@ class phase5 extends Component{
                             <p className="heading54">Get daily personalized meal plans. Know exactly what to eat and when.</p>
                         </div>
                         </Col>
-                    </div>
+                    </Row>
                     <Row className="grid_row">
                         <Col md={10} >
                             <div className="gridtext">
