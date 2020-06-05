@@ -13,7 +13,11 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~antd/dist/antd.css";
 @import "~animate.css/animate.min.css";
-
+@import "~bootstrap/dist/css/bootstrap.min.css";
 // pages
 @import "../components/all";
 @import "./pages/all";
+
+//abstracts
+@import "./abstracts/base";
+@import "./abstracts/variables";
