@@ -23,7 +23,8 @@ const LandingPage = () => {
   return (
     <>
       <main role="main" className="main-wrapper">
-        <div className="sidenav-wrapper">
+        <Mail/>
+        {/* <div className="sidenav-wrapper">
           <section className="sidenav-container">
             <SideNav />
           </section>
@@ -94,7 +95,7 @@ const LandingPage = () => {
           <div style={{ width: "30px", height: "30px" }}>
             <Mail />
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import PaymentCard from "react-payment-card-component";
+// import PaymentCard from "react-payment-card-component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +17,7 @@ const Payments = () => {
           onMouseOver={handleFlip}
           onMouseOut={handleFlip}
         >
-          <PaymentCard
+          {/* <PaymentCard
             bank="itau"
             model="personnalite"
             type="platinum"
@@ -27,7 +27,7 @@ const Payments = () => {
             holderName="Owen Lars"
             expiration="12/20"
             flipped={flipped}
-          />
+          /> */}
         </div>
         <div className="payments-buttons mt-3">
           <div className="payments-buttons-add">
