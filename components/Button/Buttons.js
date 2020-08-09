@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Arrow } from "../../assets/chevron.svg";
+import Arrow from "../../assets/Chevron";
 const Buttons = () => {
   return (
     <>

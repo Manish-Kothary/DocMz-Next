@@ -1,11 +1,11 @@
 import React from "react";
-import { ReactComponent as Cross } from "../../assets/red-cross.svg";
-import { ReactComponent as Home } from "../../assets/home.svg";
-import { ReactComponent as Settings } from "../../assets/settings.svg";
-import { ReactComponent as Question } from "../../assets/question.svg";
-import { ReactComponent as Heart } from "../../assets/heart.svg";
-import { ReactComponent as Mail } from "../../assets/mail.svg";
-import { ReactComponent as Exit } from "../../assets/exit.svg";
+import Cross from "../../assets/RedCross";
+import Home from "../../assets/Home";
+import Settings from "../../assets/Settings";
+import Question from "../../assets/Question";
+import Heart from "../../assets/Heart";
+import Mail from "../../assets/Mail";
+import Exit from "../../assets/Exit";
 
 const SideNav = () => {
   return (

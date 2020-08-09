@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactComponent as Cardio } from "../../assets/cardiology.svg";
-import { ReactComponent as Tooth } from "../../assets/tooth.svg";
-import { ReactComponent as Hearts } from "../../assets/lungs.svg";
+import Cardio from "../../assets/Cardiology";
+import Tooth from "../../assets/Tooth";
+import Hearts from "../../assets/Lungs";
 
 const Cards = props => {
   return (
